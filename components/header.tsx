@@ -40,7 +40,9 @@ export const Header = () => {
           <Link className="text-sm mr-6" href="#">
             Log in
           </Link>
-          <Button href="#">Sign up</Button>
+          <Button href="#" variant={"primary"}>
+            Sign up
+          </Button>
         </div>
       </Container>
     </header>
