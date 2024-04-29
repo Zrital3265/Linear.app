@@ -21,6 +21,7 @@ const config: Config = {
       white: "#ffffff",
       "transparent-white": "rgba(255, 255, 255, 0.08)",
       background: "#000212",
+      grey: "#858699",
     },
     spacing: {
       0: "0",

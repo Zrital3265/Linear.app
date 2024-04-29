@@ -32,4 +32,3 @@ export const Button = ({ children, href, variant, size }: buttonProps) => {
     </Link>
   );
 };
-``;
