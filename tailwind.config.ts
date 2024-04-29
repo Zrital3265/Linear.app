@@ -46,6 +46,9 @@ const config: Config = {
       "primary-gradient":
         " linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%)",
     },
+    boxShadow: {
+      primary: "rgb(80 63 205 / 50%) 0px 1px 40px",
+    },
   },
   plugins: [],
 };
