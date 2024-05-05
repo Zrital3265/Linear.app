@@ -10,12 +10,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
         <meta
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1"
         />
-      </head> */}
+        <link rel="icon" type="image/png" href="/favicon.ico" sizes="any" />
+      </head>
       <body>
         <div>
           <Header />
