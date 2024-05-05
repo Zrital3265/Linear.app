@@ -6,11 +6,32 @@
   :root {
     --navigation-height: 4.8rem;
   }
-  html {
-    @apply bg-background font-sans   text-white;
-    font-size: 62.5%;
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent-white;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-grey rounded-2xl;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-white;
   }
 }
+
+html {
+  @apply bg-background font-sans   text-white;
+  font-size: 62.5%;
+}
+
 @layer utilities {
   .text-shadow {
     text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
