@@ -18,6 +18,7 @@ const config: Config = {
       "5xl": ["8rem", "1"],
     },
     colors: {
+      transparent: "transparent",
       white: "#ffffff",
       "transparent-white": "rgba(255, 255, 255, 0.08)",
       background: "#000212",
