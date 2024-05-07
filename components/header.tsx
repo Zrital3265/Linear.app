@@ -13,7 +13,7 @@ export const Header = () => {
     <header className="fixed  left-0 top-0 flex w-full  justify-evenly  border-b  border-transparent-white backdrop-blur-[12px] ">
       <Container className="flex h-[var(--navigation-height)] ">
         {/* logo */}
-        <Link className=" flex items-center text-md font-medium" href="/">
+        <Link className=" flex items-center text-sm font-medium" href="/">
           <Logo className=" mr-2 h-[1.8rem] w-[1.8rem] " />
           Linear
         </Link>
