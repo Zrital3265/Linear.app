@@ -22,7 +22,7 @@ const footerLinks = [
   {
     title: "Company",
     links: [
-      { title: "About US", href: "#" },
+      { title: "About us", href: "#" },
       { title: "Blog", href: "#" },
       { title: "Careers", href: "#" },
       { title: "Customers", href: "#" },
@@ -81,7 +81,10 @@ export const Footer = () => {
                       linkIndex, // Add "linkIndex" as the key prop
                     ) => (
                       <li key={linkIndex} className="[&_a]:last:mb-0">
-                        <Link className="mb-3 block text-grey" href={link.href}>
+                        <Link
+                          className="mb-3 block text-grey transition-colors hover:text-white"
+                          href={link.href}
+                        >
                           {link.title}
                         </Link>
                       </li>
