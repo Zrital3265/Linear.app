@@ -1,21 +1,26 @@
 import React from "react";
 import Container from "../components/container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/hero";
+import { Button, IconWrapper } from "@/components/button";
 // import Image from "next/image";
 
 const page = () => {
   return (
-    <Container>
+    <Container className="pt-[6.4rem] ">
       <Hero>
+        <Button variant={"secondary"} size={"small"} className="" href="/">
+          Linear 2024 Release – Built for scale <IconWrapper> → </IconWrapper>
+        </Button>
         <HeroTitle>
           Linear is a better way
-          <br /> to build products
+          <br className="hidden md:block" /> to build products
         </HeroTitle>
         <HeroSubtitle>
           Meet the new standard for modern software development.
-          <br /> Streamline issues, sprints, and product roadmaps.
+          <br className="hidden md:block" /> Streamline issues, sprints, and
+          product roadmaps.
         </HeroSubtitle>
-        <img src="/img/image.png" alt="hero image" />
+        <img src="/img/hero.webp" alt="hero image" />
       </Hero>
     </Container>
   );
