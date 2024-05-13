@@ -18,7 +18,7 @@
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    @apply bg-grey rounded-2xl;
+    @apply rounded-2xl bg-grey;
   }
 
   /* Handle on hover */
@@ -28,7 +28,7 @@
 }
 
 html {
-  @apply bg-background font-sans   text-white;
+  @apply bg-background font-sans   text-off-white;
   font-size: 62.5%;
 }
 
@@ -36,4 +36,15 @@ html {
   .text-shadow {
     text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
   }
+}
+.text-gradient {
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 255, 255) 30%,
+    rgba(255, 255, 255, 0.38)
+  );
+  -webkit-background-clip: text; /* For WebKit browsers */
+  -moz-background-clip: text; /* For Firefox */
+  background-clip: text;
+  color: transparent;
 }

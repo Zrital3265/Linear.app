@@ -82,7 +82,7 @@ export const Footer = () => {
                     ) => (
                       <li key={linkIndex} className="[&_a]:last:mb-0">
                         <Link
-                          className="mb-3 block text-grey transition-colors hover:text-white"
+                          className="hover:text-off-white mb-3 block text-grey transition-colors"
                           href={link.href}
                         >
                           {link.title}
