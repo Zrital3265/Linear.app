@@ -2,25 +2,42 @@ import React from "react";
 import Container from "../components/container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/hero";
 import { Button, IconWrapper } from "@/components/button";
+import { ChevronIcon } from "@/icons/chevron";
 // import Image from "next/image";
 
 const page = () => {
   return (
     <Container className="pt-[6.4rem] ">
       <Hero>
-        <Button variant={"secondary"} size={"small"} className="" href="/">
+        <Button
+          variant={"secondary"}
+          size={"small"}
+          className="animate-fade-in"
+          href="/"
+        >
           Linear 2024 Release – Built for scale <IconWrapper> → </IconWrapper>
         </Button>
-        <HeroTitle>
+        <HeroTitle className="animate-fade-in  translate-y-[-1 rem] opacity-0 [--animation-delay:200ms]">
           Linear is a better way
           <br className="hidden md:block" /> to build products
         </HeroTitle>
-        <HeroSubtitle>
+        <HeroSubtitle className="animate-fade-in  [--animation-delay:400ms translate-y-[-1 rem] opacity-0">
           Meet the new standard for modern software development.
           <br className="hidden md:block" /> Streamline issues, sprints, and
           product roadmaps.
         </HeroSubtitle>
-        <img src="/img/hero.webp" alt="hero image" />
+        <Button
+          variant={"primary"}
+          size={"large"}
+          href="/"
+          className="animate-fade-in translate-y-[-1  rem text-md opacity-0 [--animation-delay:600ms]"
+        >
+          Get started
+          <IconWrapper>
+            <ChevronIcon />
+          </IconWrapper>
+        </Button>
+        <img className="mt-[13rem]" src="/img/hero.webp" alt="hero image" />
       </Hero>
     </Container>
   );

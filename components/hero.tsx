@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 
 interface HeroProps {
@@ -6,15 +7,32 @@ interface HeroProps {
 
 interface HeroPropsElement {
   children: React.ReactNode;
+  className?: string;
 }
 
-export const HeroTitle = ({ children }: HeroPropsElement) => {
-  return <h1 className="md:text-8xl text-6xl my-6">{children}</h1>;
+export const HeroTitle = ({ children, className }: HeroPropsElement) => {
+  return (
+    <h1
+      className={classNames(
+        "text-gradient my-6 text-6xl md:text-8xl",
+        className,
+      )}
+    >
+      {children}
+    </h1>
+  );
 };
 
-export const HeroSubtitle = ({ children }: HeroPropsElement) => {
+export const HeroSubtitle = ({ children, className }: HeroPropsElement) => {
   return (
-    <p className="md:text-xl text-primary-text mb-12 text-lg">{children}</p>
+    <p
+      className={classNames(
+        "mb-12 text-lg text-primary-text md:text-xl",
+        className,
+      )}
+    >
+      {children}
+    </p>
   );
 };
 
