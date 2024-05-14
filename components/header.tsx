@@ -92,7 +92,7 @@ export const Header = () => {
           <Link className="mx-6 text-sm md:mx-0 md:mr-8 " href="#">
             Log in
           </Link>
-          <Button className="" href="#" variant={"primary"}>
+          <Button className="rounded-3xl" href="#" variant={"primary"}>
             Sign up
           </Button>
         </div>
@@ -103,7 +103,6 @@ export const Header = () => {
           onClick={() => {
             // console.log("Current value of open:", hamburgerMenuIsOpen);
             sethamburgerMenuIsOpen((open) => !open);
-            ``;
           }}
         >
           <span className="sr-only">Toggle Menu</span>
