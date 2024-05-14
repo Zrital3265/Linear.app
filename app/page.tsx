@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/hero";
 import { Button, IconWrapper } from "@/components/button";
+import { ChevronIcon } from "@/icons/chevron";
 // import Image from "next/image";
 
 const page = () => {
@@ -20,7 +21,13 @@ const page = () => {
           <br className="hidden md:block" /> Streamline issues, sprints, and
           product roadmaps.
         </HeroSubtitle>
-        <img src="/img/hero.webp" alt="hero image" />
+        <Button variant={"primary"} size={"medium"} href="/" className="">
+          Get started{" "}
+          <IconWrapper>
+            <ChevronIcon></ChevronIcon>
+          </IconWrapper>
+        </Button>
+        <img className="mt-[12.8rem]" src="/img/hero.webp" alt="hero image" />
       </Hero>
     </Container>
   );
