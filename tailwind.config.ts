@@ -59,6 +59,8 @@ const config: Config = {
         " linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%)",
       "page-gradient":
         "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
+      "hero-gradient":
+        "radial-gradient(ellipse 50% 80% at 20% 40%,rgba(93,52,221,0.1),transparent), radial-gradient(ellipse 50% 80% at 80% 50%,rgba(120,119,198,0.15),transparent)",
     },
     boxShadow: {
       primary: "rgb(80 63 205 / 50%) 0px 1px 40px",

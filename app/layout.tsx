@@ -1,4 +1,3 @@
-import { Container } from "postcss";
 import "../styles/global.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
