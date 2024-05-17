@@ -7,8 +7,7 @@ import { HeroImage } from "@/components/heroimage";
 
 export default function Homepage() {
   return (
-    <Container className="overflow-hidden py-[6.4rem] ">
-      {/* before:bg-hero-glow before:absolute before:left-0 before:top-0 before:h-full before:w-full before:[filter:blur(120px)] */}
+    <Container className=" py-[6.4rem] ">
       <Hero>
         <Button
           variant={"secondary"}
@@ -38,11 +37,6 @@ export default function Homepage() {
             <ChevronIcon />
           </IconWrapper>
         </Button>
-        {/* <div className=" mt-[12.8rem] overflow-hidden [perspective:2000px] ">
-          <div className="rounded-lg border-transparent-white bg-white bg-opacity-[0.01] bg-hero-gradient [transform:rotateX(25deg)]">
-            <img className="opacity-0 " src="/img/hero.webp" alt="hero image" />
-          </div>
-        </div> */}
         <HeroImage />
       </Hero>
     </Container>
