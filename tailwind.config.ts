@@ -101,12 +101,28 @@ const config: Config = {
         "99%": { "stroke-dashoffset": "0" },
         "100%": { visiblity: "hidden" },
       },
+      "glow-line-horizontal": {
+        "0%": { opacity: "0,", transform: "translateX(0)" },
+        "5%": { opacity: "1,", transform: "translateX(0)" },
+        "90%": { opacity: " 1" },
+        "100%": { opacity: "0", transform: "translateX(min(60vw, 45rem))" },
+      },
+      "glow-line-vertical": {
+        "0%": { opacity: "0", transform: "translateY(0)" },
+        "5%": { opacity: "1", transform: "translateY(0)" },
+        "90%": { opacity: "1" },
+        "100%": { opacity: "0", transform: "translateY(min(21vw, 45rem))" },
+      },
     },
     animation: {
       "fade-in": "fade-in 1000ms var(--animation-delay,0ms) ease forwards",
       "image-rotate": "image-rotate 1400ms ease forwards",
       "image-glow": "image-glow 4100ms 600ms ease-out forwards",
       "sketch-lines": "sketch-lines 1200ms 1 ease-out forwards",
+      "glow-line-horizontal":
+        "glow-line-horizontal var(--animation-duration) ease-in forwards",
+      "glow-line-vertical":
+        "glow-line-vertical var(--animation-duration) ease-in forwards",
     },
   },
   plugins: [],
