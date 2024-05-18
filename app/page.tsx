@@ -7,7 +7,7 @@ import { HeroImage } from "@/components/heroimage";
 
 export default function Homepage() {
   return (
-    <Container className=" py-[6.4rem] ">
+    <Container className="overflow-hidden py-[6.4rem] ">
       <Hero>
         <Button
           variant={"secondary"}
