@@ -5,6 +5,7 @@ import { Logo } from "@/icons/logo";
 import { TwitterIcon } from "@/icons/twitter";
 import { SlackIcon } from "@/icons/slack";
 import { GithubIcon } from "@/icons/github";
+import { YouTuberIcon } from "@/icons/youtube";
 
 const footerLinks = [
   {
@@ -60,6 +61,7 @@ export const Footer = () => {
               <TwitterIcon />
               <SlackIcon />
               <GithubIcon />
+              <YouTuberIcon />
             </div>
           </div>
         </div>
@@ -82,7 +84,7 @@ export const Footer = () => {
                     ) => (
                       <li key={linkIndex} className="[&_a]:last:mb-0">
                         <Link
-                          className="hover:text-off-white mb-3 block text-grey transition-colors"
+                          className="mb-3 block text-grey transition-colors hover:text-off-white"
                           href={link.href}
                         >
                           {link.title}
