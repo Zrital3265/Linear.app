@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "./container";
 import Link from "next/link";
-import { Logo } from "@/icons/logo";
-import { TwitterIcon } from "@/icons/twitter";
-import { SlackIcon } from "@/icons/slack";
-import { GithubIcon } from "@/icons/github";
-import { YouTuberIcon } from "@/icons/youtube";
+import { Logo } from "@/components/icons/logo";
+import { TwitterIcon } from "@/components/icons/twitter";
+import { SlackIcon } from "@/components/icons/slack";
+import { GithubIcon } from "@/components/icons/github";
+import { YouTuberIcon } from "@/components/icons/youtube";
 
 const footerLinks = [
   {

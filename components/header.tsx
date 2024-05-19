@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Logo } from "@/icons/logo";
+import { Logo } from "@/components/icons/logo";
 import Link from "next/link";
 import Container from "./container";
 import { Button } from "./button";
-import { HamburgerIcon } from "@/icons/hamburger";
+import { HamburgerIcon } from "@/components/icons/hamburger";
 import classNames from "classnames";
 
 export const Header = () => {
@@ -44,7 +44,7 @@ export const Header = () => {
         <div
           className={classNames(
             "flex items-center transition-[visibility] md:visible ",
-            hamburgerMenuIsOpen ? "visible" : "invisible delay-500",
+            hamburgerMenuIsOpen ? "visible" : "delay-500 invisible",
           )}
         >
           <nav
