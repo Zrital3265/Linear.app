@@ -17,13 +17,11 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/favicon.ico" sizes="any" />
       </head>
       <body>
-        <div>
-          <Header />
-          <main className="bg-page-gradient pt-[var(--navigation-height)]">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="bg-page-gradient pt-[var(--navigation-height)]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
