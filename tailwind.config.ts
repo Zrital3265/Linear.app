@@ -16,8 +16,8 @@ const config: Config = {
       md: "1.6rem",
       lg: "1.8rem",
       xl: ["2.2rem", "1.3"],
-      "2xl": "2.4 rem",
-      "3xl": "2.6 rem",
+      "2xl": "2.4rem",
+      "3xl": "2.6rem",
       "4xl": "3.2rem",
       "5xl": "4rem",
       "6xl": ["4.4rem", "1"],
@@ -66,6 +66,8 @@ const config: Config = {
         "linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)",
       "radial-faded":
         "radial-gradient(circle at bottom center,var(--color),transparent 70%)",
+      "glass-gradient":
+        "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
     },
     boxShadow: {
       primary: "rgb(80 63 205 / 50%) 0px 1px 40px",
@@ -115,6 +117,14 @@ const config: Config = {
         "90%": { opacity: "1" },
         "100%": { opacity: "0", transform: "translateY(min(21vw, 45rem))" },
       },
+      zap: {
+        "0%, 9%, 11%, 100% ": {
+          fill: "transparent",
+        },
+        "10%": {
+          fill: "white",
+        },
+      },
     },
     animation: {
       "fade-in": "fade-in 1000ms var(--animation-delay,0ms) ease forwards",
@@ -125,6 +135,7 @@ const config: Config = {
         "glow-line-horizontal var(--animation-duration) ease-in forwards",
       "glow-line-vertical":
         "glow-line-vertical var(--animation-duration) ease-in forwards",
+      zap: "zap 2250ms calc(var(--index) * 20ms) linear infinite",
     },
   },
   plugins: [],
