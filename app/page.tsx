@@ -27,9 +27,7 @@ export default function Homepage() {
       >
         <StarsIllustration />
       </div>
-      <Container>
-        <UnlikeAnyTools />
-      </Container>
+      <UnlikeAnyTools />
     </>
   );
 }

@@ -1,29 +1,32 @@
 import { Button, IconWrapper } from "../button";
+import Container from "../container";
 import { LogoLightIllustration } from "../illustration/logolight";
 import { ZapIllustration } from "../illustration/zap";
 
 export const UnlikeAnyTools = () => (
   <>
     <div className="text-white">
-      <div className="text-center">
-        <h2 className="mb-4 text-4xl md:mb-7 md:text-7xl">
-          Unlike any tools <br className="hidden md:inline-block" />
-          that you have used before.
-        </h2>
-        <p className="mx-auto mb-4 max-w-[68rem] text-lg text-primary-text md:text-xl">
-          Designed to the last pixel and engineered with unforgiving precision,
-          Linear combines UI elegance with world-class performance.
-        </p>
-      </div>
+      <Container>
+        <div className="text-center">
+          <h2 className="mb-4 text-4xl md:mb-7 md:text-7xl">
+            Unlike any tools <br className="hidden md:inline-block" />
+            that you have used before.
+          </h2>
+          <p className="mx-auto mb-4 max-w-[68rem] text-lg text-primary-text md:text-xl">
+            Designed to the last pixel and engineered with unforgiving
+            precision, Linear combines UI elegance with world-class performance.
+          </p>
+        </div>
+      </Container>
       <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto md:flex-wrap">
-        <div className="bg-glass-gradient flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center  justify-end rounded-[4.8rem] border border-transparent-white p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
+        <div className="flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
           <p className="text-3xl">Built for your keyboard</p>
           <p className="text-md text-primary-text">
             Fly through your tasks with rapid-fire keyboard shortcuts for
             everything. Literally everything.
           </p>
         </div>
-        <div className="bg-glass-gradient relative flex min-h-[48rem] w-full snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
+        <div className="relative flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
           <div className="mask-linear-faded absolute top-[-9.2rem] ">
             <ZapIllustration />
           </div>
@@ -32,8 +35,8 @@ export const UnlikeAnyTools = () => (
             Built for speed with 50ms interactions and real-time sync.
           </p>
         </div>
-        <div className=" bg-glass-gradient group relative flex min-h-[48rem] w-full snap-center flex-col items-center  justify-end rounded-[4.8rem] border border-transparent-white p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
-          <div className="pointer-events-none absolute top-[-8rem] w-[130%]">
+        <div className=" group relative flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
+          <div className="pointer-events-none absolute top-[-8rem]  ">
             <LogoLightIllustration />
           </div>
           <p className="text-3xl">Designed for modern software teams</p>
@@ -58,7 +61,7 @@ export const UnlikeAnyTools = () => (
             </svg>
           </Button>
         </div>
-        <div className="bg-glass-gradient flex min-h-[48rem] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
+        <div className="flex min-h-[48rem] shrink-0 snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
           <p className="text-3xl">Meet your command line</p>
           <p className="text-md text-primary-text">
             Complete any action in seconds with the global command menu.
