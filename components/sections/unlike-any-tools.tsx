@@ -2,6 +2,7 @@ import { Button, IconWrapper } from "../button";
 import Container from "../container";
 import { LogoLightIllustration } from "../illustration/logolight";
 import { ZapIllustration } from "../illustration/zap";
+import { KeyboardShortcuts } from "../keyboard-shortcuts";
 
 export const UnlikeAnyTools = () => (
   <>
@@ -21,6 +22,7 @@ export const UnlikeAnyTools = () => (
       <div className="h-[48rem] overflow-hidden md:h-auto md:overflow-auto">
         <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 md:flex-wrap xl:px-[18rem] ">
           <div className=" flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
+            <KeyboardShortcuts />
             <p className="mb-4 text-3xl">Built for your keyboard</p>
             <p className="text-md text-primary-text">
               Fly through your tasks with rapid-fire keyboard shortcuts for
@@ -37,7 +39,7 @@ export const UnlikeAnyTools = () => (
             </p>
           </div>
           <div className="group relative flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
-            <div className="pointer-events-none absolute top-[-8rem] w-[130%] ">
+            <div className="pointer-events-none absolute top-[-8rem]  ">
               <LogoLightIllustration />
             </div>
             <p className="mb-4 text-3xl xl:truncate">
@@ -50,7 +52,7 @@ export const UnlikeAnyTools = () => (
             <Button
               variant="secondary"
               href="/"
-              className="absolute  bottom-[21rem] translate-y-[30%] scale-[0.8] opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 [&.IconWrapper]:text-[-1.1rem]"
+              className="absolute  bottom-[21rem] translate-y-[30%] scale-[0.8] opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 md:bottom-[24rem] [&.IconWrapper]:text-[-1.1rem]"
             >
               <IconWrapper>Linear Method</IconWrapper>
               Product principles
