@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/global.css";
 import Container from "../components/container";
 import { Clients } from "@/components/sections/clients";
 import { StarsIllustration } from "@/components/stars";

@@ -23,31 +23,38 @@ export const UnlikeAnyTools = () => (
         <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 md:flex-wrap xl:px-[18rem] ">
           <div className=" flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(66.66%-12px)] md:p-14">
             <KeyboardShortcuts />
-            <p className="mb-4 text-3xl">Built for your keyboard</p>
-            <p className="text-md text-primary-text">
-              Fly through your tasks with rapid-fire keyboard shortcuts for
-              everything. Literally everything.
+            <p className="mb-4 whitespace-nowrap text-3xl">
+              Built for your keyboard
+            </p>
+            <p className="   text-md text-primary-text">
+              Fly through your tasks with rapid- fire keyboard{" "}
+              <br className="" /> shortcuts for everything. Literally
+              everything.
             </p>
           </div>
           <div className="relative flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
             <div className="mask-linear-faded absolute top-[-9.2rem] ">
               <ZapIllustration />
             </div>
-            <p className=" mb-4 text-3xl">Breathtakingly fast</p>
-            <p className="text-md text-primary-text">
-              Built for speed with 50ms interactions and real-time sync.
+            <p className=" mb-4 whitespace-nowrap text-3xl">
+              Breathtakingly fast
+            </p>
+            <p className=" whitespace-nowrap text-md text-primary-text">
+              Built for speed with 50ms <br />
+              interactions and real-time sync.
             </p>
           </div>
           <div className="group relative flex min-h-[48rem] w-full shrink-0 snap-center flex-col items-center justify-end  overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-14">
             <div className="pointer-events-none absolute top-[-8rem]  ">
               <LogoLightIllustration />
             </div>
-            <p className="mb-4 text-3xl xl:truncate">
-              Designed for modern <br className="block md:inline" />
-              software teams
+            <p className="mb-4  text-3xl leading-tight sm:whitespace-nowrap">
+              Designed for modern
+              <br className="" /> software teams
             </p>
-            <p className="text-md text-primary-text">
-              Comes with built-in workflows that create focus and routine.
+            <p className="whitespace-nowrap text-md text-primary-text">
+              Comes with built-in workflows <br />
+              that create focus and routine.
             </p>
             <Button
               variant="secondary"
