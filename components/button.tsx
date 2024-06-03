@@ -1,4 +1,5 @@
 import { cva, VariantProps } from "class-variance-authority";
+import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
 interface buttonProps extends VariantProps<typeof buttonClasses> {
@@ -30,9 +31,14 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
     size: "medium",
   },
 });
-export const IconWrapper = ({ children }: { children: React.ReactNode }) => {
-  return <span className="icon-wrapper">{children}</span>;
-};
+
+export const IconWrapper = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => <span className={classNames("icon-wrapper", className)}>{children}</span>;
 
 export const Button = ({
   children,
