@@ -71,3 +71,24 @@ html {
     transparent 100%
   );
 }
+/* Customize scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Adjust width as needed */
+  height: 6px; /* Adjust height as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Thumb color */
+  border-radius: 10px;
+  border: 3px solid transparent; /* Adjust border and color */
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}

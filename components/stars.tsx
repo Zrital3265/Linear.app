@@ -1,4 +1,4 @@
-export const StarsIllustration = () => (
+export const StarsIllustration = ({ className }: { className?: string }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="872" height="731" fill="none">
     <g fill="#fff" opacity="0.7">
       <circle
