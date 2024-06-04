@@ -17,17 +17,17 @@ export default function Homepage() {
       </div>
       <Container>
         <Clients />
+        <div
+          className={classNames(
+            " mask-radial-faded pointer-events-none relative z-[-1] my-[-12.8rem] h-[60rem]  overflow-hidden",
+            "[--color:#7877C6] before:absolute before:inset-0 before:w-[111%]  before:bg-radial-faded before:opacity-[0.4]",
+            // "after:absolute after:-left-1/2 after:bottom-1/2 after:h-[142.8%] after:w-[200%] after:rounded-[50%] after:border-b after:border-[rgba(120,_119,_198,_0.4)] after:bg-background",
+            "after:absolute after:-left-1/2 after:top-1/2 after:h-[142.8%] after:w-[205%] after:rounded-[50%] after:border-[rgba(120,_119,_198,_0.4)] after:bg-background",
+          )}
+        >
+          <StarsIllustration />
+        </div>
       </Container>
-      <div
-        className={classNames(
-          " mask-radial-faded pointer-events-none relative z-[-1] my-[-12.8rem] h-[60rem]  overflow-hidden",
-          "[--color:#7877C6] before:absolute before:inset-0 before:bg-radial-faded before:opacity-[0.4]  ",
-          // "after:absolute after:-left-1/2 after:bottom-1/2 after:h-[142.8%] after:w-[200%] after:rounded-[50%] after:border-b after:border-[rgba(120,_119,_198,_0.4)] after:bg-background",
-          "after:absolute after:-left-1/2 after:top-1/2 after:h-[142.8%] after:w-[200%] after:rounded-[50%] after:border-t after:border-[rgba(120,_119,_198,_0.4)] after:bg-background",
-        )}
-      >
-        <StarsIllustration />
-      </div>
       <UnlikeAnyTools />
     </>
   );
