@@ -7,12 +7,12 @@ interface buttonProps extends VariantProps<typeof buttonClasses> {
   href: string;
   className?: string;
 }
-const buttonClasses = cva("rounded-full inline-flex items-center", {
+const buttonClasses = cva("inline-flex items-center", {
   variants: {
     variant: {
       primary: [
-        "bg-primary-gradient hover:text-shadow hover:shadow-primary transition-[box-shadow,text-shadow]",
-        "[&_.icon-wrapper]:ml-2 ",
+        "bg-button-color text-white hover:text-shadow hover:shadow-primary transition-[box-shadow,text-shadow]",
+        "[&_.icon-wrapper]:ml-1 ",
       ],
       secondary: [
         "text-off-white bg-white bg-opacity-10 border border-transparent-white backdrop-filter-[12px] hover:bg-opacity-20 transition-colors ease-in",
@@ -22,8 +22,8 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
     },
     size: {
       small: "text-xs px-3 h-7",
-      medium: "text-sm px-4 h-8",
-      large: "text-lg px-6 h-12",
+      medium: "text-sm px-[12px] h-[32px]",
+      large: "text-[17px] px-[17px] h-[50px]",
     },
   },
   defaultVariants: {

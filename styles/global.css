@@ -89,6 +89,6 @@ html {
 
 /* Firefox */
 .custom-scrollbar {
-  scrollbar-width: thin;
+  scrollbar-width: thinzz;
   scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
 }

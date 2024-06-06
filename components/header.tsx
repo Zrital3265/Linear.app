@@ -92,7 +92,12 @@ export const Header = () => {
           <Link className="mx-6 text-sm md:mx-0 md:mr-8 " href="#">
             Log in
           </Link>
-          <Button className="rounded-3xl" href="#" variant={"primary"}>
+          <Button
+            className="rounded-xl font-normal"
+            href="#"
+            variant={"primary"}
+            size={"medium"}
+          >
             Sign up
           </Button>
         </div>

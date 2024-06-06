@@ -8,7 +8,7 @@ export const HomepageHeroText = () => (
     <Button
       variant={"secondary"}
       size={"small"}
-      className="animate-fade-in"
+      className="animate-fade-in rounded-full"
       href="/"
     >
       <span>Linear 2024 Release – Built for scale</span>
@@ -18,7 +18,7 @@ export const HomepageHeroText = () => (
       Linear is a better way
       <br className="hidden md:block" /> to build products
     </HeroTitle>
-    <HeroSubtitle className="translate-y-[-1rem]  animate-fade-in opacity-0 [--animation-delay:400ms]">
+    <HeroSubtitle className="translate-y-[-1rem]  animate-fade-in leading-tight opacity-0 [--animation-delay:400ms]">
       Meet the new standard for modern software development.
       <br className="hidden md:block" /> Streamline issues, sprints, and product
       roadmaps.
@@ -27,9 +27,9 @@ export const HomepageHeroText = () => (
       variant={"primary"}
       size={"large"}
       href="/"
-      className="translate-y-[-1rem]  animate-fade-in text-md opacity-0 [--animation-delay:600ms]"
+      className="translate-y-[-1rem] animate-fade-in rounded-xl font-normal opacity-0 [--animation-delay:600ms]"
     >
-      <span>Get started</span>
+      Get started
       <IconWrapper>
         <ChevronIcon />
       </IconWrapper>
