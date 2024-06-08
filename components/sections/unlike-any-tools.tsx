@@ -21,10 +21,10 @@ export const UnlikeAnyTools = () => (
           </p>
         </div>
       </Container>
-      <div className="custom-scrollbar bg-usp-gradient">
-        <div className="mx-auto h-screen max-w-[130rem] overflow-hidden bg-opacity-[0.1] md:h-auto md:overflow-auto">
+      <div className="bg-usp-gradient">
+        <div className="mx-auto h-[48rem] max-w-[130rem] overflow-hidden bg-opacity-[0.1] md:h-auto md:overflow-auto">
           <div className="grid snap-x snap-mandatory grid-cols-[repeat(4,calc(100%-1.5rem))] gap-[8rem] overflow-auto px-6 pb-12 md:grid-cols-3 md:gap-[2rem] xl:px-[18rem]">
-            <div className=" flex min-h-[48rem]  w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
+            <div className=" )] flex  min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
               <KeyboardShortcuts />
               <p className="mb-3 whitespace-nowrap text-3xl ">
                 Built for your keyboard
@@ -63,7 +63,7 @@ export const UnlikeAnyTools = () => (
               <Button
                 variant="secondary"
                 href="/"
-                className="absolute bottom-[21rem] translate-y-[30%] scale-[0.8] opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 md:bottom-[24rem] [&.IconWrapper]:text-[-1.1rem]"
+                className="absolute bottom-[21rem] translate-y-[30%] scale-[0.8] rounded-full opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 md:bottom-[20rem] [&.IconWrapper]:text-[-1.1rem]"
               >
                 <div className="whitespace-nowrap">
                   <IconWrapper>Linear Method </IconWrapper>

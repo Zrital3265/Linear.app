@@ -32,6 +32,18 @@ html {
   font-size: 62.5%;
 }
 
+.highlighted-keys .active rect:first-child {
+  fill-opacity: 0.4;
+}
+
+.highlighted-keys .active rect:not(:first-child) {
+  stroke-opacity: 1;
+}
+
+.highlighted-keys .active path {
+  fill-opacity: 1;
+}
+
 @layer utilities {
   .text-shadow {
     text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
@@ -71,24 +83,13 @@ html {
     transparent 100%
   );
 }
-/* Customize scrollbar */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px; /* Adjust width as needed */
-  height: 6px; /* Adjust height as needed */
-}
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* Track color */
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5); /* Thumb color */
-  border-radius: 10px;
-  border: 3px solid transparent; /* Adjust border and color */
-}
-
-/* Firefox */
-.custom-scrollbar {
-  scrollbar-width: thinzz;
-  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+.mask-shortcutkeys {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 40%,
+    black calc(60%),
+    transparent 100%
+  );
 }
