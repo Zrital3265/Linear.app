@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { Button, IconWrapper } from "./button";
 import { KeyboardIllustration } from "./illustration/keyboard";
 
@@ -22,31 +22,58 @@ export const KeyboardShortcuts = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const illustrationWrapperRef = useRef<HTMLDivElement>(null);
 
-  const onShortcutButtonClick = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    keys: string,
-  ) => {
-    event.preventDefault();
+  const activeShortcutIndex = useRef(0);
+  //making sure use state runs only once due to reatc 19 it will run twice
+  const timeoutRef = useRef<NodeJS.Timeout>();
+
+  const scheduleTimeout = () => {
+    timeoutRef.current = setTimeout(gotoNextShortcut, 2100);
+  };
+  useEffect(() => {
+    scheduleTimeout();
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
+
+  const gotoShortcut = (index: number) => {
+    clearTimeout(timeoutRef.current);
     if (!wrapperRef.current) return;
 
+    const shortcut = wrapperRef.current.querySelector<HTMLButtonElement>(
+      `button:nth-child(${index + 1}`,
+    );
+    if (!shortcut) return;
+
     wrapperRef.current.scrollTo({
-      left: event.currentTarget.offsetLeft - wrapperRef.current.clientWidth / 2,
+      left: shortcut.offsetLeft - wrapperRef.current.clientWidth / 2,
       behavior: "smooth",
     });
 
     if (!illustrationWrapperRef.current) return;
-
     //clean the befoe active class
     illustrationWrapperRef.current
       .querySelectorAll(".active")
       .forEach((element) => element.classList.remove("active"));
 
+    const keys = shortcut.dataset.keys || "";
     const keyArrays = keys.split("");
     const keyElements = keyArrays.map((key) =>
       illustrationWrapperRef.current?.querySelector(`[data-key="${key}"]`),
     );
     keyElements.forEach((element) => element?.classList.add("active"));
-    console.log(keyElements);
+    activeShortcutIndex.current = index;
+    scheduleTimeout();
+  };
+
+  const gotoNextShortcut = () => {
+    gotoShortcut((activeShortcutIndex.current + 1) % shortcuts.length);
+  };
+  const scrollToShortcutPosition = (position: number) => {};
+
+  const onShortcutButtonClick = (
+    event: React.MouseEvent<HTMLButtonElement>,
+  ) => {
+    event.preventDefault();
+    gotoShortcut(Number(event.currentTarget.dataset.index));
   };
 
   return (
@@ -63,7 +90,9 @@ export const KeyboardShortcuts = () => {
             <Button
               className="shrink-0  snap-center rounded-full first:ml-[50vw] last:mr-[50vw]"
               key={shortcut.text}
-              onClick={(event) => onShortcutButtonClick(event, shortcut.keys)}
+              data-index={index}
+              data-keys={shortcut.keys}
+              onClick={onShortcutButtonClick}
               variant="secondary"
             >
               <span>{shortcut.text}</span>
