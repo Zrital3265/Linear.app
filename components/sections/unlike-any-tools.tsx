@@ -1,4 +1,5 @@
 import { Button, IconWrapper } from "../button";
+import { CommandMenu } from "../command-menu";
 import Container from "../container";
 import { LogoLightIllustration } from "../illustration/logolight";
 import { ZapIllustration } from "../illustration/zap";
@@ -24,7 +25,7 @@ export const UnlikeAnyTools = () => (
       <div className="bg-usp-gradient">
         <div className="mx-auto h-[48rem] max-w-[130rem] overflow-hidden bg-opacity-[0.1] md:h-auto md:overflow-auto">
           <div className="grid snap-x snap-mandatory grid-cols-[repeat(4,calc(100%-1.5rem))] gap-[8rem] overflow-auto px-6 pb-12 md:grid-cols-3 md:gap-[2rem] xl:px-[18rem]">
-            <div className=" )] flex  min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
+            <div className=" flex  min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
               <KeyboardShortcuts />
               <p className="mb-3 whitespace-nowrap text-3xl ">
                 Built for your keyboard
@@ -81,13 +82,17 @@ export const UnlikeAnyTools = () => (
                 </svg>
               </Button>
             </div>
-            <div className="mr-3 flex min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
-              <p className="mb-3 text-3xl sm:whitespace-nowrap">
-                Meet your command line
-              </p>
-              <p className="text-md leading-tight text-primary-text">
-                Complete any action in seconds with the global command menu.
-              </p>
+            <div className="relative mr-3 flex min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-start overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:mr-0 md:w-auto md:p-14">
+              <CommandMenu />
+              <div className="transition-opacity md:[.opened+&]:opacity-0">
+                <p className="mb-3 text-3xl leading-tight sm:whitespace-nowrap">
+                  Meet your command line
+                </p>
+                <p className="text-md leading-tight text-primary-text">
+                  Complete any action in seconds <br /> with the global command
+                  menu.
+                </p>
+              </div>
             </div>
           </div>
         </div>

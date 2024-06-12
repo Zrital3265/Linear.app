@@ -21,9 +21,8 @@ const shortcuts = [
 export const KeyboardShortcuts = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const illustrationWrapperRef = useRef<HTMLDivElement>(null);
-
   const activeShortcutIndex = useRef(0);
-  //making sure use state runs only once due to reatc 19 it will run twice
+
   const timeoutRef = useRef<NodeJS.Timeout>();
 
   const scheduleTimeout = () => {
@@ -67,8 +66,6 @@ export const KeyboardShortcuts = () => {
   const gotoNextShortcut = () => {
     gotoShortcut((activeShortcutIndex.current + 1) % shortcuts.length);
   };
-  const scrollToShortcutPosition = (position: number) => {};
-
   const onShortcutButtonClick = (
     event: React.MouseEvent<HTMLButtonElement>,
   ) => {
@@ -88,7 +85,7 @@ export const KeyboardShortcuts = () => {
         >
           {shortcuts.map((shortcut, index) => (
             <Button
-              className="shrink-0  snap-center rounded-full first:ml-[50vw] last:mr-[50vw]"
+              className="snap-center rounded-full first:ml-[50vw] last:mr-[50vw]"
               key={shortcut.text}
               data-index={index}
               data-keys={shortcut.keys}
