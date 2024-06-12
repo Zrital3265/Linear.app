@@ -1,4 +1,5 @@
 import { Button, IconWrapper } from "../button";
+import { CommandMenu } from "../command-menu";
 import Container from "../container";
 import { LogoLightIllustration } from "../illustration/logolight";
 import { ZapIllustration } from "../illustration/zap";
@@ -9,22 +10,24 @@ export const UnlikeAnyTools = () => (
     <div className="text-white">
       <Container>
         <div className=" text-center">
-          <h2 className="mb-12 text-4xl  md:mb-7 md:text-7xl">
+          <h2 className="mb-5 text-balance text-4xl leading-[3rem]  md:mb-8 md:text-7xl">
             Unlike any tool <br className="hidden md:inline-block" />
             you’ve used before
           </h2>
-          <p className="mx-auto mb-10 max-w-[68rem] text-lg text-primary-text md:text-balance md:text-xl">
-            Designed to the last pixel and engineered with unforgiving
-            precision, Linear combines UI elegance with world-class performance.
+          <p className="mx-auto mb-10 max-w-[68rem] whitespace-nowrap text-lg leading-tight text-primary-text md:text-balance md:text-xl">
+            Designed to the last pixel and engineered
+            <br className="md:hidden" /> with unforgiving precision, Linear
+            combines <br className="md:hidden" /> UI elegance with world-class
+            performance.
           </p>
         </div>
       </Container>
-      <div className="bg-usp-gradient custom-scrollbar">
-        <div className="mx-auto h-screen max-w-[130rem] overflow-hidden bg-opacity-[0.1] md:h-auto md:overflow-auto">
-          <div className="grid snap-x snap-mandatory grid-cols-[repeat(4,calc(100%-1.5rem))] gap-[8rem] overflow-auto px-8 pb-12 md:grid-cols-3 md:gap-[2rem] xl:px-[18rem]">
-            <div className=" flex min-h-[48rem]  w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
+      <div className="bg-usp-gradient">
+        <div className="mx-auto h-[48rem] max-w-[130rem] overflow-hidden bg-opacity-[0.1] md:h-auto md:overflow-auto">
+          <div className="grid snap-x snap-mandatory grid-cols-[repeat(4,calc(100%-1.5rem))] gap-[8rem] overflow-auto px-6 pb-12 md:grid-cols-3 md:gap-[2rem] xl:px-[18rem]">
+            <div className=" flex  min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
               <KeyboardShortcuts />
-              <p className="mb-4 whitespace-nowrap text-3xl ">
+              <p className="mb-3 whitespace-nowrap text-3xl ">
                 Built for your keyboard
               </p>
               <p className="text-nowrap text-md leading-tight text-primary-text">
@@ -38,7 +41,7 @@ export const UnlikeAnyTools = () => (
               <div className="mask-linear-faded absolute top-[-6.2rem] md:w-[130%] ">
                 <ZapIllustration />
               </div>
-              <p className=" mb-4 whitespace-nowrap text-3xl">
+              <p className=" mb-3 whitespace-nowrap text-3xl">
                 Breathtakingly fast
               </p>
               <p className=" whitespace-nowrap text-md leading-tight text-primary-text">
@@ -50,7 +53,7 @@ export const UnlikeAnyTools = () => (
               <div className="pointer-events-none absolute top-[-8.5rem] md:w-[130%] ">
                 <LogoLightIllustration />
               </div>
-              <p className="mb-4 text-3xl leading-tight sm:whitespace-nowrap">
+              <p className="mb-3 text-3xl leading-tight sm:whitespace-nowrap">
                 Designed for modern
                 <br className="" /> software teams
               </p>
@@ -61,7 +64,7 @@ export const UnlikeAnyTools = () => (
               <Button
                 variant="secondary"
                 href="/"
-                className="absolute bottom-[21rem] translate-y-[30%] scale-[0.8] opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 md:bottom-[24rem] [&.IconWrapper]:text-[-1.1rem]"
+                className="absolute bottom-[21rem] translate-y-[30%] scale-[0.8] rounded-full opacity-0 transition-[transform,opcity] group-hover:transform-none group-hover:opacity-100 md:bottom-[20rem] [&.IconWrapper]:text-[-1.1rem]"
               >
                 <div className="whitespace-nowrap">
                   <IconWrapper>Linear Method </IconWrapper>
@@ -79,11 +82,17 @@ export const UnlikeAnyTools = () => (
                 </svg>
               </Button>
             </div>
-            <div className="mr-2 flex min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-end rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:w-auto md:p-14">
-              <p className="mb-4 text-3xl">Meet your command line</p>
-              <p className="text-md leading-tight text-primary-text">
-                Complete any action in seconds with the global command menu.
-              </p>
+            <div className="relative mr-3 flex min-h-[48rem] w-[calc(100vw-2rem)] snap-center flex-col items-center justify-start overflow-hidden rounded-[4.8rem] border border-transparent-white bg-glass-gradient p-8 text-center md:col-span-2 md:mr-0 md:w-auto md:p-14">
+              <CommandMenu />
+              <div className="transition-opacity md:[.opened+&]:opacity-0">
+                <p className="mb-3 text-3xl leading-tight sm:whitespace-nowrap">
+                  Meet your command line
+                </p>
+                <p className="text-md leading-tight text-primary-text">
+                  Complete any action in seconds <br /> with the global command
+                  menu.
+                </p>
+              </div>
             </div>
           </div>
         </div>

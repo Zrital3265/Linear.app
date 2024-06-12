@@ -26,13 +26,14 @@ const config: Config = {
     },
     colors: {
       transparent: "transparent",
-      white: "#ffffff",
+      white: "#fff",
       "off-white": "#f7f8f8",
       "transparent-white": "rgba(255, 255, 255, 0.08)",
       background: "#000212",
       grey: "#858699",
       "grey-dark": "#222326",
       "primary-text": "#b4bcd0",
+      "button-color": "#5e6ad2",
     },
     spacing: {
       0: "0",
@@ -127,6 +128,11 @@ const config: Config = {
           fill: "white",
         },
       },
+      bounce: {
+        "50%": {
+          transform: "scale(0.98)",
+        },
+      },
     },
     animation: {
       "fade-in": "fade-in 1000ms var(--animation-delay,0ms) ease forwards",
@@ -138,6 +144,7 @@ const config: Config = {
       "glow-line-vertical":
         "glow-line-vertical var(--animation-duration) ease-in forwards",
       zap: "zap 2250ms calc(var(--index) * 20ms) linear infinite",
+      bounce: "240ms ease 0s 1 running bounce",
     },
   },
   plugins: [],
