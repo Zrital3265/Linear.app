@@ -6,6 +6,7 @@ import { StarsIllustration } from "@/components/stars";
 import { HomepageHeroText } from "@/components/sections/homepage-herot-text";
 import { UnlikeAnyTools } from "@/components/sections/unlike-any-tools";
 import classNames from "classnames";
+import { EnjoyIssueTracking } from "@/components/sections/enjoy-issue-tracking";
 
 export default function Homepage() {
   return (
@@ -29,6 +30,9 @@ export default function Homepage() {
         </div>
       </Container>
       <UnlikeAnyTools />
+      <Container className="my-[25.2rem]">
+        <EnjoyIssueTracking />
+      </Container>
     </>
   );
 }
