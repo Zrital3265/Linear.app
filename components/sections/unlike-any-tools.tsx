@@ -17,7 +17,7 @@ export const UnlikeAnyTools = () => (
           <p className="mx-auto mb-10 max-w-[68rem] text-lg leading-tight text-primary-text md:whitespace-nowrap md:text-balance md:text-xl">
             Designed to the last pixel and engineered with unforgiving{" "}
             <br className="" /> precision, Linear combines UI elegance with
-            top-class <br /> performance.
+            top-class <br className="hidden md:inline" /> performance.
           </p>
         </div>
       </Container>
