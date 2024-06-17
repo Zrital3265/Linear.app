@@ -24,11 +24,13 @@ export const BuildMomentum = () => {
         image="/cycles.webp"
         text={
           <>
-            <h2 className="mx-auto my-16 text-nowrap text-center text-lg leading-tight text-white md:w-[80%] md:text-3xl">
-              Cycles focus team on what work should happen next, <br />
-              routine to maintain velocity make <br />
+            <h2 className="mx-auto my-16 text-center text-lg leading-tight text-white md:w-[80%] md:text-nowrap md:text-3xl">
+              Cycles focus team on what work should happen next,{" "}
+              <br className="hidden md:inline" />
+              routine to maintain velocity make{" "}
+              <br className="hidden md:inline" />
               meaningful progress and
-              <br /> bestowal.
+              <br className="hidden md:inline" /> bestowal.
             </h2>
           </>
         }

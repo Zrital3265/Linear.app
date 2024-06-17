@@ -23,10 +23,12 @@ export const SetDirection = () => {
         image="/roadmap.webp"
         text={
           <>
-            <h2 className="mx-auto my-16 text-nowrap text-center text-lg leading-tight text-white md:w-[80%] md:text-3xl">
-              Plan visually, collaborate in cross-team projects, and <br />
-              make better decisions with progress insights <br />
-              and project with fabolus <br />
+            <h2 className="mx-auto my-16 text-center text-lg leading-tight text-white md:w-[80%] md:text-nowrap md:text-3xl">
+              Plan visually, collaborate in cross-team projects, and{" "}
+              <br className="hidden md:inline" />
+              make better decisions with progress insights{" "}
+              <br className="hidden md:inline" />
+              and project with fabolus <br className="hidden md:inline" />
               updates.
             </h2>
           </>

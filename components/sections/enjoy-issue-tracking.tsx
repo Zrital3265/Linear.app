@@ -23,10 +23,11 @@ export const EnjoyIssueTracking = () => {
         image="/issues.avif"
         text={
           <>
-            <h2 className="mx-auto my-16 text-nowrap text-center text-lg leading-tight text-white md:w-[80%] md:text-3xl">
+            <h2 className="mx-auto my-16 text-center text-lg leading-tight text-white md:w-[80%] md:text-nowrap md:text-3xl">
               Create tasks in seconds, discuss issues in context,
-              <br /> and breeze through your work in views <br /> tailored to
-              you and your <br /> team.
+              <br className="hidden md:inline" /> and breeze through your work
+              in views <br className="hidden md:inline" /> tailored to you and
+              your <br className="hidden md:inline" /> team.
             </h2>
           </>
         }
