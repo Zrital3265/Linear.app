@@ -60,3 +60,5 @@ Check out the live demo [here](https://linearapp-clone-ruby.vercel.app).
 - Arpan Trital (Zrital3265)
 
 Feel free to reach out for any questions or feedback!
+
+⚠️ Just so you know, I have no affiliation whatsoever with Linear. Linear owns the rights to all of the photos, the name, and the logo. The sole goal of this website is to provide education and explore.
