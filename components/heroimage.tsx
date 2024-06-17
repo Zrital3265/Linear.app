@@ -1,6 +1,6 @@
 "use client";
 import classNames from "classnames";
-import { CSSProperties, useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 interface Line {
   id: string;

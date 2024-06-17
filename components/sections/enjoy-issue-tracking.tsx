@@ -1,3 +1,4 @@
+"use client";
 import { Features } from "../features";
 import {
   AutomatedBacklogIcon,
@@ -10,21 +11,32 @@ import {
 
 export const EnjoyIssueTracking = () => {
   return (
-    <Features>
-      <Features.Title>
-        Issue tracking
-        <br /> you’ll enjoy using
-      </Features.Title>
+    <Features color="194,97,254" colorDark="53,42,79">
       <Features.Main
+        title={
+          <>
+            Issue tracking
+            <br />
+            you&apos;ll enjoy using
+          </>
+        }
         image="/issues.avif"
-        text="Create tasks in seconds, discuss issues in context, and breeze through your work in views tailored to you and your team."
+        text={
+          <>
+            <h2 className="mx-auto my-16 text-nowrap text-center text-lg leading-tight text-white md:w-[80%] md:text-3xl">
+              Create tasks in seconds, discuss issues in context,
+              <br /> and breeze through your work in views <br /> tailored to
+              you and your <br /> team.
+            </h2>
+          </>
+        }
       />
       <Features.Grid
         features={[
           {
             icon: ParentSubIcon,
             title: "Parent and sub-issues.",
-            text: "Break larger takss into smaller issues",
+            text: "Break larger takss into smaller issues.",
           },
           {
             icon: AutomatedBacklogIcon,
@@ -33,13 +45,13 @@ export const EnjoyIssueTracking = () => {
           },
           {
             icon: WorkflowsIcon,
-            title: "Custom workflows",
-            text: "Define unique issue states for each team.",
+            title: "Custom workflows.",
+            text: "Define unique issue states for teams.",
           },
           {
             icon: CustomViewsIcon,
-            title: "Filters and custom views.",
-            text: "See only what's relevant for you.",
+            title: "Filters and custom POV.",
+            text: "See only what's relevant for yourself.",
           },
           {
             icon: DiscussionIcon,
@@ -49,7 +61,7 @@ export const EnjoyIssueTracking = () => {
           {
             icon: IssuesIcon,
             title: "Issue templates.",
-            text: "Guide your team to write effective issues.",
+            text: "Guide your team to write effectively.",
           },
         ]}
       />
@@ -57,11 +69,13 @@ export const EnjoyIssueTracking = () => {
         features={[
           {
             image: "/card-board.webp",
+            imageClassName: "top-[40%] w-[200%]",
             title: "List and board",
             text: "Switch between list and board layout to view work from any angle.",
           },
           {
             image: "/card-views.webp",
+            imageClassName: "left-[24px] w-[110%] top-[34%]",
             title: "Make it yours",
             text: "Quickly apply filters and operators to refine your issue lists and create custom views.",
           },

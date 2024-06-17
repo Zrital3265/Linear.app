@@ -7,6 +7,9 @@ import { HomepageHeroText } from "@/components/sections/homepage-herot-text";
 import { UnlikeAnyTools } from "@/components/sections/unlike-any-tools";
 import classNames from "classnames";
 import { EnjoyIssueTracking } from "@/components/sections/enjoy-issue-tracking";
+import { BuildMomentum } from "@/components/sections/build-momentum";
+import { SetDirection } from "@/components/sections/set-direction";
+import { AvailableToday } from "@/components/sections/AvailableToday";
 
 export default function Homepage() {
   return (
@@ -30,8 +33,21 @@ export default function Homepage() {
         </div>
       </Container>
       <UnlikeAnyTools />
-      <Container className="my-[25.2rem]">
-        <EnjoyIssueTracking />
+
+      <EnjoyIssueTracking />
+      <BuildMomentum />
+      <SetDirection />
+      <Container>
+        <div
+          className={classNames(
+            "mask-radial-faded pointer-events-none relative z-[-1] my-[-16.4rem] h-[48rem] rotate-180 overflow-hidden md:h-[60rem]",
+            "[--color:#7877C6] before:absolute before:inset-0 before:bg-radial-faded before:opacity-[0.4]",
+            "after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[rgba(78,92,218,0.4)] after:bg-black",
+          )}
+        >
+          <StarsIllustration className="absolute left-[50%] top-[50%] [transform:translate(-50%,-50%)]" />
+        </div>
+        <AvailableToday />
       </Container>
     </>
   );
