@@ -28,7 +28,9 @@ export const Features = ({ children, color, colorDark }: FeatureProps) => {
         } as React.CSSProperties
       }
     >
-      <div className="my-[25.2rem] w-full">{children}</div>
+      <div className="mb-16 mt-[12.8rem] w-full md:mb-[12.8rem] md:mt-[25.2rem]">
+        {children}
+      </div>
     </section>
   );
 };
