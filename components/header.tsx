@@ -33,13 +33,12 @@ export const Header = () => {
 
   return (
     <header className="fixed left-0 top-0 z-10 flex w-full justify-evenly border-b border-transparent-white backdrop-blur-[12px]  ">
-      <Container className="flex h-[var(--navigation-height)] ">
+      <Container className=" flex h-[var(--navigation-height)] ">
         {/* logo */}
         <Link className="flex items-center text-sm font-medium " href="/">
           <Logo className="mr-2 h-[1.8rem] w-[1.8rem]" />
           Linear
         </Link>
-
         {/* navbar  plus ham */}
         <div
           className={classNames(
@@ -88,8 +87,8 @@ export const Header = () => {
         </div>
 
         {/* butttons */}
-        <div className="ml-15 flex h-full flex-shrink-0 items-center  md:ml-10 ">
-          <Link className="mx-6 text-sm md:mx-0 md:mr-8 " href="#">
+        <div className="ml-[4rem] flex h-full flex-shrink-0 items-center sm:ml-[8rem]  md:ml-10 ">
+          <Link className=" mx-5 text-sm md:mx-0 md:mr-8 " href="#">
             Log in
           </Link>
           <Button

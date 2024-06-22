@@ -20,7 +20,7 @@ export const Clients = () => (
       <br className="hidden md:block" /> From next-gen startups to established
       enterprises.
     </p>
-    <div className="[&_svg]:basis-[calc(50%-12px) flex flex-wrap justify-around gap-x-6 gap-y-8 [&_svg]:max-w-[16rem] md:[&_svg]:basis-[calc(16.66%-20px)]">
+    <div className="flex flex-wrap justify-around gap-x-6 gap-y-8 [&_svg]:max-w-[16rem] [&_svg]:basis-[calc(50%-12px)] md:[&_svg]:basis-[calc(16.66%-20px)]">
       <RampLogo />
       <LoomLogo className="hidden md:block" />
       <VercelLogo />

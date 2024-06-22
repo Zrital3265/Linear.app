@@ -28,7 +28,7 @@ export const Features = ({ children, color, colorDark }: FeatureProps) => {
         } as React.CSSProperties
       }
     >
-      <div className="mb-16 mt-[12.8rem] w-full md:mb-[12.8rem] md:mt-[25.2rem]">
+      <div className="mb-10 mt-[22rem] w-full md:mb-[12.8rem] md:mt-[25.2rem]">
         {children}
       </div>
     </section>
@@ -45,7 +45,7 @@ const MainFeature = ({ image, text, title }: MainFeatureProps) => {
   return (
     <>
       <div className="relative before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_50%_50%_at_center,rgba(var(--feature-color),0.1),transparent)]">
-        <Container className="w-[78rem] max-w-[90%] text-center">
+        <Container className={classNames("w-[78rem] max-w-[90%] text-center")}>
           <h2 className="text-gradient mb-11 translate-y-[40%] text-center text-6xl [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] md:text-8xl [.is-visible_&]:translate-y-0 ">
             {title}
           </h2>
@@ -73,7 +73,7 @@ type FeatureGridProps = {
 const FeatureGrid = ({ features }: FeatureGridProps) => {
   return (
     <Container>
-      <div className="mb-[14rem] grid w-full grid-cols-2 place-items-center gap-y-9 text-sm text-primary-text md:mb-[14rem] md:grid-cols-3 md:text-md">
+      <div className="mb-[14rem] grid w-full   grid-cols-2 place-items-center gap-y-9 text-sm text-primary-text md:mb-[14rem] md:grid-cols-3 md:text-md">
         {features.map(({ title, text, icon: Icon }) => (
           <div
             className="max-w-[25.6rem] [&_svg]:mb-[4px] [&_svg]:fill-white md:[&_svg]:mb-[2px] md:[&_svg]:mr-[6px] md:[&_svg]:inline"
