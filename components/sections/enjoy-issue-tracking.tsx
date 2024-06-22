@@ -70,15 +70,15 @@ export const EnjoyIssueTracking = () => {
         features={[
           {
             image: "/card-board.webp",
-            imageClassName: "top-[40%] w-[200%]",
+            imageClassName: "top-[45%] w-[200%]",
             title: "List and board",
-            text: "Switch between list and board layout to view work from any angle.",
+            text: "Switch between list and board layout to view work from POV.",
           },
           {
             image: "/card-views.webp",
-            imageClassName: "left-[24px] w-[110%] top-[34%]",
+            imageClassName: "left-[24px] w-[110%] md:top-[34%] top-[50%]",
             title: "Make it yours",
-            text: "Quickly apply filters and operators to refine your issue lists and create custom views.",
+            text: "Quickly apply operators to refine your issue lists and  custom views.",
           },
         ]}
       />
