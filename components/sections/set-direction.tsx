@@ -78,9 +78,9 @@ export const SetDirection = () => {
           },
           {
             image: "./card-roadmaps.webp",
-            imageClassName: "top-[55%] md:top-[40%] w-full left-[2%]",
+            imageClassName: "top-[65%] md:top-[40%] w-full left-[5%]",
             title: "Focus on the image",
-            text: "Explore every company project in one view to easily identify what needs attention.",
+            text: "Explore projects in one view to identify the problems.",
           },
         ]}
       />
