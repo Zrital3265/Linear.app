@@ -16,7 +16,7 @@ export const Features = ({ children, color, colorDark }: FeatureProps) => {
     <section
       ref={ref}
       className={classNames(
-        "before:ease-ease-in relative flex flex-col items-center overflow-x-hidden py-[12.8rem] before:pointer-events-none before:absolute before:h-[40rem] before:w-full before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:bg-no-repeat before:transition-[transform,opacity] before:duration-1000 before:[background-position:1%_0%,99%_0%] before:[background-size:50%_100%,50%_100%] before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)]  after:pointer-events-none after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent)]",
+        "relative flex flex-col items-center overflow-x-clip py-[12.8rem] before:pointer-events-none before:absolute before:h-[40rem] before:w-full before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:bg-no-repeat before:transition-[transform,opacity] before:duration-1000 before:ease-in before:[background-position:1%_0%,99%_0%] before:[background-size:50%_100%,50%_100%] before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)]  after:pointer-events-none after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent)]",
         inView &&
           "is-visible before:opacity-100 before:[transform:rotate(180deg)_scale(2)]",
         !inView && "before:rotate-180 before:opacity-40",
@@ -39,13 +39,24 @@ type MainFeatureProps = {
   image?: string;
   text: React.ReactNode;
   title: React.ReactNode;
+  imageSize?: "small" | "large";
 };
 
-const MainFeature = ({ image, text, title }: MainFeatureProps) => {
+const MainFeature = ({
+  image,
+  text,
+  title,
+  imageSize = "small",
+}: MainFeatureProps) => {
   return (
     <>
       <div className="relative before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_50%_50%_at_center,rgba(var(--feature-color),0.1),transparent)]">
-        <Container className={classNames("w-[78rem] max-w-[90%] text-center")}>
+        <Container
+          className={classNames(
+            " max-w-[90%] text-center",
+            imageSize === "small" ? "w-[78rem]" : "w-[102.4rem]",
+          )}
+        >
           <h2 className="text-gradient mb-11 translate-y-[40%] text-center text-6xl [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] md:text-8xl [.is-visible_&]:translate-y-0 ">
             {title}
           </h2>
