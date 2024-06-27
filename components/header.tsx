@@ -43,7 +43,7 @@ export const Header = () => {
         <div
           className={classNames(
             "flex items-center transition-[visibility] md:visible ",
-            hamburgerMenuIsOpen ? "visible" : "delay-500 invisible",
+            hamburgerMenuIsOpen ? "visible" : "delay-500 invisible"
           )}
         >
           <nav
@@ -51,14 +51,14 @@ export const Header = () => {
               " fixed left-0 top-[var(--navigation-height)]  h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity  duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:opacity-100 md:transition-none",
               hamburgerMenuIsOpen
                 ? " translate-x-0 opacity-100"
-                : "translate-x-[-100vw] opacity-0",
+                : "translate-x-[-100vw] opacity-0"
             )}
           >
             <ul
               className={classNames(
                 "flex h-full flex-col overflow-hidden md:flex-row md:items-center [&_li]:border-b [&_li]:border-grey-dark  md:[&_li]:border-none",
                 " [&_a:hover]:text-grey [&_a]:ml-11 [&_a]:flex [&_a]:h-[var(--navigation-height)] [&_a]:w-full [&_a]:items-center [&_a]:text-lg md:[&_a]:text-sm",
-                hamburgerMenuIsOpen && "[&_a]:translate-y-0",
+                hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
               <li>

@@ -69,7 +69,7 @@ export const Footer = () => {
           {footerLinks.map(
             (
               column,
-              columnIndex, // Add "columnIndex" as the key prop
+              columnIndex // Add "columnIndex" as the key prop
             ) => (
               <div
                 key={columnIndex}
@@ -80,7 +80,7 @@ export const Footer = () => {
                   {column.links.map(
                     (
                       link,
-                      linkIndex, // Add "linkIndex" as the key prop
+                      linkIndex // Add "linkIndex" as the key prop
                     ) => (
                       <li key={linkIndex} className="[&_a]:last:mb-0">
                         <Link
@@ -90,11 +90,11 @@ export const Footer = () => {
                           {link.title}
                         </Link>
                       </li>
-                    ),
+                    )
                   )}
                 </ul>
               </div>
-            ),
+            )
           )}
         </div>
       </Container>

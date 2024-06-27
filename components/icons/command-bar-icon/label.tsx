@@ -12,7 +12,7 @@ export const LabelIcon = ({ type }: { type: LabelType }) => (
   <div
     className={classNames(
       "flex h-[0.9rem] w-[0.9rem] items-center justify-center rounded-full",
-      typeClassNames[type],
+      typeClassNames[type]
     )}
   />
 );

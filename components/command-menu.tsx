@@ -96,7 +96,7 @@ export const CommandMenu = () => {
 
     // If a search value is provided, we do a simple search based on that input.
     return [...options].filter((option) =>
-      option.label.toLowerCase().includes(searchValue.toLowerCase()),
+      option.label.toLowerCase().includes(searchValue.toLowerCase())
     );
   }, [selectedOption, searchValue]);
 
@@ -115,7 +115,7 @@ export const CommandMenu = () => {
           "absolute left-[calc(50%+7.5rem)] flex w-[80vw] max-w-[53rem] -translate-x-1/2 flex-col items-start rounded-xl border border-transparent-white bg-transparent-white shadow-[rgb(0_0_0_/_35%)_0px_7px_32px] transition-[transform,opacity] md:left-1/2 ",
           opened &&
             "opened translate-y-[12.8rem] opacity-100 md:translate-y-[2.4rem]",
-          !opened && "translate-y-[12.8rem] opacity-60",
+          !opened && "translate-y-[12.8rem] opacity-60"
         )}
       >
         <span className="ml-4 mt-2 bg-white/5 px-2 text-xs leading-10 text-white/50">
@@ -149,7 +149,7 @@ export const CommandMenu = () => {
                 <Icon />
                 {label}
               </button>
-            ),
+            )
           )}
         </div>
       </div>

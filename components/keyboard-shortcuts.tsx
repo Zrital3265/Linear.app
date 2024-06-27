@@ -38,7 +38,7 @@ export const KeyboardShortcuts = () => {
     if (!wrapperRef.current) return;
 
     const shortcut = wrapperRef.current.querySelector<HTMLButtonElement>(
-      `button:nth-child(${index + 1}`,
+      `button:nth-child(${index + 1}`
     );
     if (!shortcut) return;
 
@@ -56,7 +56,7 @@ export const KeyboardShortcuts = () => {
     const keys = shortcut.dataset.keys || "";
     const keyArrays = keys.split("");
     const keyElements = keyArrays.map((key) =>
-      illustrationWrapperRef.current?.querySelector(`[data-key="${key}"]`),
+      illustrationWrapperRef.current?.querySelector(`[data-key="${key}"]`)
     );
     keyElements.forEach((element) => element?.classList.add("active"));
     activeShortcutIndex.current = index;
@@ -67,7 +67,7 @@ export const KeyboardShortcuts = () => {
     gotoShortcut((activeShortcutIndex.current + 1) % shortcuts.length);
   };
   const onShortcutButtonClick = (
-    event: React.MouseEvent<HTMLButtonElement>,
+    event: React.MouseEvent<HTMLButtonElement>
   ) => {
     event.preventDefault();
     gotoShortcut(Number(event.currentTarget.dataset.index));

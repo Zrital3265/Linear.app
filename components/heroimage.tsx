@@ -56,7 +56,7 @@ export const HeroImage = () => {
           "relative rounded-lg border border-transparent-white bg-white bg-opacity-[0.01] bg-hero-gradient",
           inView ? "animate-image-rotate" : "[transform:rotateX(25deg)]",
           "before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-hero-glow before:opacity-0 before:[filter:blur(120px)]",
-          inView && "before:animate-image-glow",
+          inView && "before:animate-image-glow"
         )}
       >
         {/* using css style due to comiplation issues here */}
@@ -77,7 +77,7 @@ export const HeroImage = () => {
                 line.direction === "to right" &&
                   ` left-0 h-[1px] w-[calc(var(--size)*0.8rem)] animate-glow-line-horizontal`,
                 line.direction === "to bottom" &&
-                  ` right-0 h-[calc(var(--size)*0.8rem)] w-[1px] animate-glow-line-vertical`,
+                  ` right-0 h-[calc(var(--size)*0.8rem)] w-[1px] animate-glow-line-vertical`
               )}
             />
           ))}
@@ -87,7 +87,7 @@ export const HeroImage = () => {
           className={classNames(
             "absolute left-0 top-0 h-full w-full",
             "[&_path]:stroke-white [&_path]:[stroke-dasharray:1] [&_path]:[stroke-dashoffset:1] [&_path]:[stroke-opacity:0.2]",
-            inView && "[&_path]:animate-sketch-lines",
+            inView && "[&_path]:animate-sketch-lines"
           )}
           width="100%"
           viewBox="0 0 1499 778"
@@ -103,7 +103,7 @@ export const HeroImage = () => {
         <img
           className={classNames(
             "relative z-10 h-auto w-full transition-opacity delay-[680ms]",
-            inView ? "opacity-100" : "opacity-0",
+            inView ? "opacity-100" : "opacity-0"
           )}
           src="/img/hero.webp"
           alt="hero image"
