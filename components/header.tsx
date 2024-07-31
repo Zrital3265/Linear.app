@@ -32,7 +32,7 @@ export const Header = () => {
   }, [sethamburgerMenuIsOpen]);
 
   return (
-    <header className="fixed left-0 top-0 z-10 flex w-full justify-evenly border-b border-transparent-white backdrop-blur-[12px]  ">
+    <header className="fixed left-0 top-0 z-10 flex w-full md:justify-evenly justify-between border-b border-transparent-white backdrop-blur-[12px]  ">
       <Container className=" flex h-[var(--navigation-height)] ">
         {/* logo */}
         <Link className="flex items-center text-sm font-medium " href="/">
